@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$BRANCH" == "staging" || "$BRANCH" == "main"  ]] ; then
+if [[ "$BRANCH" == "staging" || "$BRANCH" == "master"  ]] ; then
   # Proceed with the build
   exit 1;
 
