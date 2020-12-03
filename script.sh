@@ -1,8 +1,10 @@
-if [[ "$BRANCH" == "staging" || "$BRANCH" == "master"  ]] ; then	exit 0;
-  # Proceed with the build	
-  exit 1;	
+#!/bin/bash
 
-else	
-  # Don't build	
-  exit 0;	
-fi 
+if [[ "$VERCEL_ENV" == "production" ]] ; then
+  # Proceed with the build
+  exit 1;
+
+else
+  # Don't build
+  exit 0;
+fi
