@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$VERCEL_ENV" == "production" ]] ; then
+if [[ "$BRANCH" == "staging" || "$BRANCH" == "master"  ]] ; then
   # Proceed with the build
   exit 1;
 
