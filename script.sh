@@ -7,4 +7,5 @@ if [[ "$BRANCH" == "staging" || "$BRANCH" == "master"  ]] ; then
 else
   # Don't build
   exit 0;
+
 fi
